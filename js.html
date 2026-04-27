@@ -9,18 +9,18 @@
     podaj pierwsza liczbe: <input type="number" id="pierwsza"> <br>
     podaj druga liczbe : <input type="number" id="druga"><br>
 
-    <button type="button" onclick="suma()">dodawanie</button>
+    <button type="button" onclick="suma()">dodawanie</button> <!-- po kliknieciu wykonuje sie dzialanie "suma" -->
     <button type="button" onclick="roznica()">odejmowanie</button>
     <button type="button" onclick="iloraz()">dzielenie</button>
     <button type="button" onclick="iloczyn()">mnozenie</button>
-    <p id="wynik"></p>
+    <p id="wynik"></p> <!-- osobna linijka dla wyniku -->
 
     <script>
         function suma(){
-            let x = parseFloat(document.getElementById("pierwsza").value);
+            let x = parseFloat(document.getElementById("pierwsza").value);/* bieze pierwsza liczbe i wstawia ja za x */
             let y = parseFloat(document.getElementById("druga").value);
-            let otrzymana = y + x;
-            document.getElementById("wynik").innerHTML = "wynik: " + otrzymana;
+            let otrzymana = y + x; /* otrzymany wynik zapisuje w zmiennej "otrzymana" */
+            document.getElementById("wynik").innerHTML = "wynik: " + otrzymana; 
         }
 
 
