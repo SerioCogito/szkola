@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    podaj metraz: <input type="number" id="metraz">
-    podaj powiezchnie podlogi: <input type="number" id="podloga">
+    podaj metraz: <input type="number" id="metraz"><br>
+    podaj powiezchnie podlogi: <input type="number" id="podloga"><br>
 
     <input type="checkbox" id="kafelki">Kafelki?<br>
     <button type="button" onclick="dzialanie()">oblicz</button>
@@ -15,8 +15,12 @@
 
     <script>
         function dzialanie(){
-            let x = Number(document.getElementById("metraz").value);
-            let y = Number(document.getElementById("podloga").value);
+            let metraz = Number(document.getElementById("metraz").value);
+            let podloga = Number(document.getElementById("podloga").value);
+            let kafelki = document.getElementById("kafelki").checked;
+            let koszt = 0;
+
+            koszt += metraz * 4000;
             
         }
     </script>
