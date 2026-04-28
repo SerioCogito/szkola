@@ -15,9 +15,9 @@
 
     <script>
         function dzialanie(){
-            let metraz = Number(document.getElementById("metraz").value);
+            let metraz = Number(document.getElementById("metraz").value); /* "number" jest bardziej sczegulowy od "parseFloat" */
             let podloga = Number(document.getElementById("podloga").value);
-            let kafelki = document.getElementById("kafelki").checked;
+            let kafelki = document.getElementById("kafelki").checked; /* nie dajemy number/parse bo to nie jest pole  */
             let koszt = 0;
 
             koszt += metraz * 4000;
@@ -27,8 +27,9 @@
                 koszt += 2000;
             }
             
-            let wynik = document.getElementById("wynik");
+            let wynik = document.getElementById("wynik"); /* let "nazwa" sekcji dla ktorej bedzie dzialal "css" */
             wynik.style.color = "green";
+            wynik.style.fontSize = "25px";
 
 
             document.getElementById("wynik").innerHTML = 
