@@ -27,8 +27,12 @@
                 koszt += 2000;
             }
             
+            let wynik = document.getElementById("wynik");
+            wynik.style.color = "green";
+
+
             document.getElementById("wynik").innerHTML = 
-            `koszt mieszkania: $(koszt) zl`;
+            `koszt mieszkania:${koszt}zl`;
             
         }
     </script>
