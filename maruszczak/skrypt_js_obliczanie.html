@@ -21,6 +21,14 @@
             let koszt = 0;
 
             koszt += metraz * 4000;
+            koszt += podloga * 1000;
+
+            if (kafelki === true){
+                koszt += 2000;
+            }
+            
+            document.getElementById("wynik").innerHTML = 
+            `koszt mieszkania: $(koszt) zl`;
             
         }
     </script>
