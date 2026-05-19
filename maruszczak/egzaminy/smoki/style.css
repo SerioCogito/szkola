@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+    font-family: Georgia;
+}
+
+header{
+    background-color: tomato;
+    color:mistyrose;
+    padding: 10px;
+}
+nav{
+    background-color: brown;
+    width: 20%;
+    float: left;
+}
+main{
+    background-color: mistyrose;
+    width: 80%;
+    height: 510px;
+    float: left;
+}
+footer{
+    background-color: tomato;
+    color:mistyrose;
+    padding: 10px;
+    clear: both;
+}
+nav>section{
+background-color:#FFAEA5 ;
+height: 170px;
+font-size: 200%;
+}
+nav>section:first-child{
+background-color: mistyrose;
+
+}
+main>section:first-child{
+    display: none;
+}
+
+#tabela{
+    border: 1px dotted indigo;
+    margin: auto;
+    width: 60%;
+}
+
+button,select{
+    margin: 20px;
+}
+dt{
+    font-weight: bold;
+    font-style: italic;
+}
+
+main>section:nth-child(2){
+    display: none;
+}
