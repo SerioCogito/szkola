@@ -5,62 +5,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <script src="skrypt.js"></script>
+    <title>Smoki</title>
 </head>
 
 <body>
     <header>
-        <h2>poznaj smoki</h2>
+        <h2>Poznaj Smoki!</h2>
     </header>
     <nav>
-        <section>baza</section>
-        <section>opisy</section>
-        <section>galeria</section>
+        <div class="blok1">
+            baza
+        </div>
+        <div class="blok2">
+            opis
+        </div>
+        <div class="blok3">
+            galeria
+        </div>
     </nav>
     <main>
-        <section>
-            <h3>Baza smokow</h3>
-            <select name="kraj">
-                <option>Francja</option>
+        <section id="baza">
+            <h3>Baza Smokow</h3>
+            <select>
                 <option>Bulgaria</option>
                 <option>Chiny</option>
+                <option>Francja</option>
                 <option>Japonia</option>
-                <option>polska</option>
+                <option>Polska</option>
             </select>
-            <button>wyslij</button>
-            <table id="tabela">
+
+            <button type="submit">Szukaj</button> 
+            
+            <table>
                 <tr>
-                    <th>nazwa</th>
-                    <th>dlugosc</th>
-                    <th>szerokosc</th>
+                    <th>Nazwa</th>
+                    <th>Dlugosc</th>
+                    <th>Szerokosc</th>
                 </tr>
             </table>
         </section>
-        <section>
-            <h3>Opisy smokow</h3>
+        <section id="opisy">
+            <h3>Opisy Smokow</h3>
             <dl>
-                <dt>smok czerwony</dt>
-                <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach
-                    wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
-                <dt>smok zielony</dt>
-                <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym.
-                    Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
-                <dt>smok niebieski</dt>
-                <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy.
-                    Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie
-                    lubi się przepracowywać.</dd>
+                <dt>Smok Czerwony</dt>
+                <dd>Pochodzi z Chin. Ma 1000 lat. zywi sie mniejszymi zwierzetami. Posiada luski cenne na rynkach
+                    wschodnich do wyrabiania lekarstw. Jest dziki i grozny.</dd>
+                <dt>Smok Zielony</dt>
+                <dd>Pochodzi z Bulgarii. Ma 10000 lat. zywi sie mniejszymi zwierzetami, ale tylko w kolorze zielonym.
+                    Jest kosmaty. Z siersci zgubionej przez niego, tka sie najdrozsze materialy.</dd>
+                <dt>Smok niebieski</dt>
+                <dd>Pochodzi z Francji. Ma 100 lat. zywi sie owocami morza. Jest natchnieniem dla najlepszych malarzy.
+                    Czesto im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak przny i nie lubi
+                    sie przepracowywac.
+                </dd>
             </dl>
         </section>
-        <section>
-            <h3>Galeria</h3>
+        <section id="galeria">
             <img src="smok1.JPG" alt="smok czerwony">
             <img src="smok2.JPG" alt="smok wielki">
-            <img src="smok3.JPG" alt="Skrzydlaty łaciaty">
+            <img src="smok3.JPG" alt="skrzydlaty laciaty">
         </section>
     </main>
     <footer>
-        strone opracowal hubert kubik
+        strone opracowal: hubert kubik
     </footer>
 </body>
 
