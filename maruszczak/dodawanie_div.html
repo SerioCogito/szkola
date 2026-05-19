@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px, solid black;
+            padding: 2px;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <p>
+            Praesent finibus venenatis massa sit amet facilisis. Curabitur accumsan turpis at augue imperdiet fringilla. Morbi vel maximus nulla. Cras tincidunt aliquam tortor, sed aliquet nibh aliquam sed. Morbi quis pellentesque tortor.
+        </p>
+    </div>
+    <br>
+    
+  
+    <button id="przycisk" onclick="nowydiv()">dodaj div</button>
+   
+    <script>
+        function nowydiv(){
+            //utwoz nowy div
+            let nowydiv = document.createElement("div"); 
+            //zawartosc diva 
+            nowydiv.innerHTML = `
+            uis ultricies tempor arcu nec auctor. Sed molestie interdum ips  
+            `;
+            //wstaw div do body
+        //document.body.appendChild(nowydiv); 
+        let przycisk = document.getElementById("przycisk");
+        //wstaw div przed przyciskiem do body
+        document.body.insertBefore(nowydiv, przycisk);
+        }
+        
+    </script>
+</body>
+</html>

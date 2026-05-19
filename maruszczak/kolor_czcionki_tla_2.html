@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <p id="akapit">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id imperdiet dui. Sed placerat velit vel odio congue pulvinar. Ut egestas enim leo, id malesuada orci vehicula nec. Nullam pulvinar nibh eu ex mattis interdum. Fusce sed mi non lacus lobortis pellentesque nec et purus. Fusce molestie, lorem id gravida volutpat, ante diam pretium velit, vel lobortis purus libero non nisl.
+    </p>
+    <input type="text" id="kolor">
+     <br><br>
+        <button onclick="czcionka()">Zmien kolor czcionki</button>
+        <button onclick="tlo()">Zmien kolor tla</button>
+        <button onclick="caletlo()">zmien kolor calego tla</button>
+    <script>
+        function czcionka(){
+            let kolor = document.getElementById("kolor").value;
+            document.getElementById("akapit").style.color = kolor;
+        }
+        function tlo(){
+            let kolor = document.getElementById("kolor").value
+            document.getElementById("akapit").style.backgroundColor = kolor;
+
+        }
+        function caletlo(){
+            let kolor = document.getElementById("kolor").value;
+            document.body.style.backgroundColor = kolor;
+        }
+    </script>
+</body>
+</html>

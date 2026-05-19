@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="obraz">
+
+    </div>
+    <br>
+  
+    
+    <button  onclick="dodajzd()">dodaj zdjecie</button>
+    <script>
+        
+        function dodajzd(){
+            // tworzy element img
+            let zdiecie = document.createElement("img");
+            //adres zdjecia
+            zdiecie.src = "kot.jpg";
+            //szerokosc zdjecia
+            zdiecie.with = 300;
+            //tytul zdjecia
+            zdiecie.title = "zdiecie kot";
+            //alt zdjecia
+            zdiecie.alt = "kot";
+            //dodanie zdjecia do div z id obraz
+            document.getElementById("obraz").appendChild(zdiecie);
+        }
+    </script>
+</body>
+</html>

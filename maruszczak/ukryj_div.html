@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas id imperdiet dui. Sed placerat velit vel odio congue pulvinar. Ut egestas enim leo, id malesuada orci vehicula nec. Nullam pulvinar nibh eu ex mattis interdum. Fusce sed mi non lacus lobortis pellentesque nec et purus. Fusce molestie, lorem id gravida volutpat, ante diam pretium velit, vel lobortis purus libero non nisl.
+        </p>
+    </div>
+
+    <div id="div2">
+        turpis sapien, auctor ut tincidunt ac, dignissim sit amet elit. Vivamus dictum, libero at faucibus porttitor, quam risus fermentum orci, non laoreet elit magna quis leo. Curabitur justo quam, pulvinar id finibus in, sagittis a lacus.
+    </div>
+    <br>
+    <button onclick="znikanie()">ukryj div 1</button>
+    <button onclick="znikanie2()">ukryj div 2</button>
+    <button onclick="pokaz()">pokaz wszystkie div-y</button>
+    <script>
+         function znikanie(){
+            document.getElementById("div1").style.display = "none";
+            document.getElementById("div2").style.display = "block";
+         }
+          function znikanie2(){
+            document.getElementById("div2").style.display = "none";
+            document.getElementById("div1").style.display = "block";
+         }
+         function pokaz(){
+            document.getElementById("div2").style.display = "block";
+            document.getElementById("div1").style.display = "block";
+         }
+
+    </script>
+   
+</body>
+</html>
