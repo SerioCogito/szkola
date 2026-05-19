@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="skrypt.js"></script>
     <title>Smoki</title>
 </head>
 
@@ -14,13 +13,14 @@
         <h2>Poznaj Smoki!</h2>
     </header>
     <nav>
-        <div class="blok1">
+        <div id="blok1" onclick="baza()">
             baza
         </div>
-        <div class="blok2">
-            opis
+        <div id="blok2" onclick="opis()">
+            opis 
+            
         </div>
-        <div class="blok3">
+        <div id="blok3" onclick="galeria()">
             galeria
         </div>
     </nav>
@@ -70,6 +70,8 @@
     <footer>
         strone opracowal: hubert kubik
     </footer>
+    <!-- skrypt js najlepiej dawac na samym dole strony -->
+    <script src="script.js"></script>
 </body>
 
 </html>

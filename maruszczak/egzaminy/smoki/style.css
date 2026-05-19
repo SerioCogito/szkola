@@ -14,13 +14,13 @@ nav {
     float: left;
 }
 
-.blok1,.blok2,.blok3 {
+#blok1,#blok2,#blok3 {
     background-color: #FFAEA5;
     height: 170px;
     size: 200%;
 }
 
-.blok1 {
+#blok1 {
     background-color: mistyrose;
 }
 
@@ -44,7 +44,14 @@ dt{
   font-weight: bold;
   font-style: italic;
 }
-
+/* to powoduje ze po otwarciu strony nie widzac opisow */
+#opisy{
+display: none;
+}
+/* to powoduje ze po otwarciu strony nie widac galeri */
+#galeria{                   
+    display: none;
+}
 
 footer{
     clear: both;
