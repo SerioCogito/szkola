@@ -65,6 +65,13 @@
         echo '<pre>';
         var_dump($r);
         echo '<pre>';
+
+        // Zmiana typu danych za pomoca castingu
+        $u = 8;
+        $u = (string) $u;
+        echo '<pre>';
+        var_dump($u);
+        echo '<pre>';
         ?>
 </body>
 </html>
