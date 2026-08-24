@@ -22,6 +22,22 @@
         // tablice
         $auta = array("Volvo","BMW","Audi");
         var_dump($auta);
+
+        // Obiekty
+        class Car{
+            public $color;
+            public $model;
+            public function __construct($color, $model){
+                $this->color = $color;
+                $this->model = $model;
+        }
+        public function message(){
+            return "my car is a " . $this->color ."". $this->model ."";
+
+        }      
+        }
+        $car = new Car("red","Volvo");
+        var_dump($car);
         ?>
 </body>
 </html>
