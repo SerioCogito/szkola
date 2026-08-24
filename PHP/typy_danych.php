@@ -14,15 +14,21 @@
         echo '<pre>';
         //Float
         $y = 10.435;
+        echo '<pre>';
         var_dump($y);
+        echo '<pre>';
 
         // Bool
         $z = true;
+        echo '<pre>';
         var_dump($z);
+        echo '<pre>';
 
         // tablice
         $auta = array("Volvo","BMW","Audi");
+        echo '<pre>';
         var_dump($auta);
+        echo '<pre>';
 
         // Obiekty
         class Car{
@@ -38,12 +44,16 @@
         }      
         }
         $car = new Car("red","Volvo");
+        echo '<pre>';
         var_dump($car);
+        echo '<pre>';
 
         // Null
         $h = "witaj swiecie";
         $h = null;
+        echo '<pre>';
         var_dump($h);
+        echo '<pre>';
 
         // 
         ?>
