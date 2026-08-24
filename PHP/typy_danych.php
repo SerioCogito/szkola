@@ -55,7 +55,16 @@
         var_dump($h);
         echo '<pre>';
 
-        // 
+        // Zmiana typu danych
+        $t = 9;
+        echo '<pre>';
+        var_dump($t);
+        echo '<pre>';
+
+        $r = "hello";
+        echo '<pre>';
+        var_dump($r);
+        echo '<pre>';
         ?>
 </body>
 </html>
