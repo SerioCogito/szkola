@@ -9,7 +9,7 @@
         <?php
         // Int
         $x = 5324;
-        echo '<pre>';
+        echo '<pre>';               //echo '<pre>' to taki ENTER w PHP
         var_dump($x);
         echo '<pre>';
         //Float
