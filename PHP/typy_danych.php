@@ -9,8 +9,9 @@
         <?php
         // Int
         $x = 5324;
+        echo '<pre>';
         var_dump($x);
-
+        echo '<pre>';
         //Float
         $y = 10.435;
         var_dump($y);
@@ -43,6 +44,8 @@
         $h = "witaj swiecie";
         $h = null;
         var_dump($h);
+
+        // 
         ?>
 </body>
 </html>
