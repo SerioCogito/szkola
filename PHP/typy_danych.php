@@ -38,6 +38,11 @@
         }
         $car = new Car("red","Volvo");
         var_dump($car);
+
+        // Null
+        $h = "witaj swiecie";
+        $h = null;
+        var_dump($h);
         ?>
 </body>
 </html>
