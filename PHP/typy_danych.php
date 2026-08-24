@@ -18,6 +18,10 @@
         // Bool
         $z = true;
         var_dump($z);
+
+        // tablice
+        $auta = array("Volvo","BMW","Audi");
+        var_dump($auta);
         ?>
 </body>
 </html>
