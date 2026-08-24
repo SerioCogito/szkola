@@ -7,7 +7,17 @@
 </head>
 <body>
         <?php
-        
+        // Int
+        $x = 5324;
+        var_dump($x);
+
+        //Float
+        $y = 10.435;
+        var_dump($y);
+
+        // Bool
+        $z = true;
+        var_dump($z);
         ?>
 </body>
 </html>
