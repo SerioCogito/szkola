@@ -11,10 +11,24 @@
     podaj wage paczki: <input type="number" id="waga"><br>
     za pobraniem: <input type="checkbox" id="pobranie"><br>
     <button onclick="dzialanie()">oblicz koszt</button>
-    <p id="koszt"></p>
+    <p id="wynik"></p>
     <script>
         function dzialanie() {
-            let waga = x;
+            let waga = Number (document.getElementById("waga").value);
+            let pobranie = document.getElementById("pobranie").checked;
+            let koszt = 0;
+            
+            if (waga <= 5){
+                koszt += 15;
+            } else{
+                koszt += 22;
+            }
+
+            if (pobranie === true){
+                koszt += 5;
+            }
+          let wynik = document.getElementById("wynik");
+          document.getElementById("wynik").innerHTML = `koszt wysylki paczki o wadze ${waga} kg wynosi ${koszt} zl`;
         }
     </script>
 </body>
