@@ -1,3 +1,15 @@
-#chuj{
-    background-color: black;
+body {
+    
+}
+
+#lewy {
+    float: left;
+}
+
+#prawy {
+    float: left;
+}
+
+#stopka {
+    clear: both;
 }
