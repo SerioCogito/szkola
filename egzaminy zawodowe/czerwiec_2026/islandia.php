@@ -49,8 +49,10 @@
 
     <footer>
             <hr>
-    <p>Autor: 238750256hdfb§5</p>
+    <p>Autor: test czy okej</p>
     </footer>
 </body>
 
 </html>
+
+
