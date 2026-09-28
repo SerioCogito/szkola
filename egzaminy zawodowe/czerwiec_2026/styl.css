@@ -40,5 +40,15 @@ section{
     margin-left: 50px;
     margin-right: 50px;
     height: 400px;
-    /*paski przewijania?*/
+    overflow: auto;
+    display: flex;          /* włącza flexboxa - dzieci (zdjęcia) układają się w linii obok siebie */
+    flex-wrap: wrap;        /* gdy zdjęcia nie mieszczą się w jednym rzędzie, zawijają się do następnego */
+    justify-content: center; /* wyśrodkowuje zdjęcia poziomo wewnątrz sekcji */
+}
+
+.miniatura{
+    height: 300px;
+    margin: 10px;
+    opacity: 0.8;
+    transition-duration: 1s;
 }

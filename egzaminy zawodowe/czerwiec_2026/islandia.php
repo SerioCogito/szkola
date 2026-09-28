@@ -15,8 +15,18 @@
         </a>
     </header>
     <main>
+        <h2>Galeria</h2>
         <section>
-            <h2>Galeria</h2>
+            <?php
+            $conn = mysqli_connect("localhost", "root", "", "islandia");
+            $wynik = mysqli_query($conn, "SELECT idObiekt, plik, nazwa FROM obiekty WHERE panstwo = 'Islandia'");
+            while($w = mysqli_fetch_assoc($wynik)){
+                echo "<a href='obiekty.php?id={$w['idObiekt']}'>
+                <img src='zdjecia/{$w['plik']}' alt='{$w['nazwa']}' title='{$w['nazwa']}' class='miniatura'>
+                </a>";
+            }
+            mysqli_close($conn);
+            ?>
         </section>
     </main>
     <nav>
@@ -36,9 +46,13 @@
                 </li>
                 <li>Siedliska zwierzat
                     <ol>
-                        <?php
+                          <?php
                         $conn = mysqli_connect("localhost", "root", "", "islandia");
-                        $wynik = mysqli_query($conn, "SELECT ")
+                        $wynik = mysqli_query($conn, "SELECT obiekty.nazwa FROM obiekty WHERE panstwo = 'Islandia' AND idRodzaj = 14");
+                        while($w = mysqli_fetch_assoc($wynik)){
+                            echo "<li>" .$w['nazwa'] . "</li>";
+                        }
+                        mysqli_close($conn);
                         ?>
                     </ol>
                 </li>
@@ -49,10 +63,8 @@
 
     <footer>
             <hr>
-    <p>Autor: test czy okej</p>
+    <p>Autor: 238750256hdfb§5</p>
     </footer>
 </body>
 
 </html>
-
-
