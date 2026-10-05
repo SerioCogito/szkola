@@ -1,0 +1,63 @@
+body{
+    font-family: Garamond;
+}
+
+#lewy1 {
+    height: 500px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+    
+    
+    
+
+}
+
+#prawy1 {
+    height: 150px;
+    width: 75%;
+    background-color: indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+    
+    
+    
+
+
+}
+
+#lewy2 {
+    height: 300px;
+    width: 25%;
+    background-color: lavender;
+    float: left;
+    
+    
+
+}
+
+#prawy2 {
+    height: 650px;
+    width: 75%;
+    background-color: lavender;
+    font-size: 200%;
+    text-align: center;
+    float: right;
+   
+    
+
+}
+
+#stopka{
+    background-color: indigo;
+    width: 100%;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+
+.kwadrat{
+    list-style-type: square;
+}
