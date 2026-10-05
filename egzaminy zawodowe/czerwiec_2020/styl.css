@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Garamond;
 }
 
@@ -7,10 +7,6 @@ body{
     width: 25%;
     background-color: lavender;
     float: left;
-    
-    
-    
-
 }
 
 #prawy1 {
@@ -21,11 +17,6 @@ body{
     font-size: 200%;
     text-align: center;
     float: right;
-    
-    
-    
-
-
 }
 
 #lewy2 {
@@ -33,9 +24,6 @@ body{
     width: 25%;
     background-color: lavender;
     float: left;
-    
-    
-
 }
 
 #prawy2 {
@@ -45,12 +33,9 @@ body{
     font-size: 200%;
     text-align: center;
     float: right;
-   
-    
-
 }
 
-#stopka{
+#stopka {
     background-color: indigo;
     width: 100%;
     color: white;
@@ -58,6 +43,6 @@ body{
     clear: both;
 }
 
-.kwadrat{
+.kwadrat {
     list-style-type: square;
 }

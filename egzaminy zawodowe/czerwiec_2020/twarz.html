@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <div id="container">
+   
+    
+    <div id="prawy1">
+        <h1>Salon kosmetyczny</h1>
+    </div>
     <div id="lewy1">
         <h2>W ofercie</h2>
         <table>
@@ -26,22 +30,24 @@
         </table>
             <a href="index.html">Do strony glownej</a>
     </div>
-    <div id="prawy1">
-        <h1>Salon kosmetyczny</h1>
+    <div id="prawy2">
+        <h2>Sprawdz cene swojej wizyty</h2>
+        Piling <input type="checkbox" id="1"><br>
+        <input type="checkbox" id="2">Maska<br>
+        <input type="checkbox" id="3">Masaz twarzy<br>
+        Regulacja brwi<input type="checkbox" id="4"><br>
+        <button type="button" onclick="dzialanie()">Sprawdz cene</button><br>
+        <p id="wynik"></p>
+
     </div>
     <div id="lewy2">
         <img src="zdjecia/obraz1.jpg" alt="kosmetyczka">
     </div>
-    <div id="prawy2">
-        <h2>Sprawdz cene swojej wizyty</h2>
-        <input type="checkbox">Piling<br>
-        <input type="checkbox">Maska<br>
-        <input type="checkbox">Masaz twarzy<br>
-        <input type="checkbox">Regulacja brwi<br>
-        <button type="button">Sprawdz cene</button><br>
-        <p id="wynik"></p>
-
-    </div>
+    
     <div id="stopka">
         <p>Autor: 23456768</p>
     </div>
+
+    <script src="skrypt.js"></script>
+</body>
+</html>
