@@ -1,2 +1,2 @@
-* .value - odczyt z <input> i '<select>'
+* .value - odczyt z `<input>` i `<select>`
 *
