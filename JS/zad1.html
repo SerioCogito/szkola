@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zad1</title>
+</head>
+<body>
+    <input type="number" id="pole1"> <br>
+    <input type="number" id="pole2"><br>
+    <button onclick="dzialanie()">oblicz</button>
+    <p id="wynik"></p>
+
+    <script>
+        function dzialanie(){
+            let x = Number(document.getElementById("pole1").value);
+            let y = Number(document.getElementById("pole2").value);
+            let z = document.getElementById("wynik");
+
+            let suma = x + y;
+            z.innerHTML = "wynik: " + suma; //z.innerHTMl poniewarz id "wynik" pobieramy w zmiennej "z"
+        }
+    </script>
+</body>
+</html>
