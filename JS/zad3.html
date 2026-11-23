@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad3</title>
+</head>
+<body>
+    <input type="number" id="liczba"><br>
+    <input type="radio" name="typ"  id="parz"> parzyste<br>
+    <input type="radio" name="typ"  id="nieparz"> nieparzyste<br>
+    <button type="button">Pokaz</button>
+    <p id="wynik"></p>
+
+    <script>
+        function dzialanie(){
+            let n = Number(document.getElementById("liczba").value);
+            let z = document.getElementById("wynik");
+
+            if (n < 1){
+                z.innerHTML = "Podaj liczbe wieksza od 0"
+            }
+        }
+    </script>
+</body>
+</html>
