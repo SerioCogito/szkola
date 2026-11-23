@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zad2</title>
+</head>
+<body>
+    <select id="select">
+        <option value="30">kurtka</option>
+        <option value="20">czapka</option>
+        <option value="40">spodnie</option>
+    </select><br>
+    <input type="checkbox" id="rabat"> rabat 10%<br>
+    <button onclick="dzialanie()">oblicz</button><br>
+    <p id="wynik"></p>
+
+    <script>
+        function dzialanie(){
+            let x = Number(document.getElementById("select").value)
+            let y = document.getElementById("rabat").checked;
+            let z = document.getElementById("wynik");
+
+            let suma = x;
+
+            if(y){
+                suma = suma * 0.9; //w JS ulamki zapisuje sie z "."
+            }
+
+            z.innerHTML = "cena: " + suma;
+        }
+    </script>
+</body>
+</html>
